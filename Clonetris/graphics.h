@@ -1,4 +1,5 @@
-#pragma once
+#ifndef GRAPHICS_H
+#define GRAPHICS_H
 #include "SDL.h"
 class Graphics
 {
@@ -14,3 +15,4 @@ public:
 	void presentRenderer();
 };
 
+#endif

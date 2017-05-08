@@ -2,7 +2,6 @@
 #include <iostream>
 #include <string>
 #include "game.h"
-
 Board::Board() : boardRect({ 0, 0, Game::TILE_SIZE_, Game::TILE_SIZE_ })
 {
 	//Create the board for game logic
@@ -40,6 +39,11 @@ void Board::printBoard() {
 		}
 		std::cout << std::endl;
 	}
+}
+
+bool Board::drawPiece(Piece* p) {
+	p->printPiece();
+	return true;
 }
 
 void Board::draw(Graphics& graphics) {
